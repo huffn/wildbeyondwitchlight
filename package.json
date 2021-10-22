@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "remix-app-template-js",
+  "description": "",
+  "license": "",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "postinstall": "remix setup node",
+    "start": "vercel dev",
+    "watch:css": "postcss styles --base styles --dir app/styles -w",
+    "build:css": "postcss styles --base styles --dir app/styles --env production"
+  },
+  "dependencies": {
+    "@remix-run/react": "^0.19.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "6.0.0-beta.6",
+    "remix": "^0.19.3",
+    "@remix-run/vercel": "^0.19.3",
+    "@vercel/node": "^1.8.3"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^0.19.3",
+    "vercel": "^21.2.2",
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
